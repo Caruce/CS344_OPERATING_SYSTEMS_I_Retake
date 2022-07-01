@@ -1,0 +1,106 @@
+PRE-SCRIPT INFO
+  Grading Script PID: 11346
+  Note: your smallsh will report a different PID when evaluating $$
+: BEGINNING TEST SCRIPT
+: 
+: --------------------
+: Using comment (5 points if only next prompt is displayed next)
+: : 
+: 
+: --------------------
+: ls (10 points for returning dir contents)
+: mytestresults
+p3testscript
+README.txt
+smallsh
+smallsh.c
+: 
+: 
+: --------------------
+: ls out junk
+: : 
+: 
+: --------------------
+: cat junk (15 points for correctly returning contents of junk)
+: junk
+mytestresults
+p3testscript
+README.txt
+smallsh
+smallsh.c
+: 
+: 
+: --------------------
+: wc in junk (15 points for returning correct numbers from wc)
+:  6  6 61
+: 
+: 
+: --------------------
+: wc in junk out junk2; cat junk2 (10 points for returning correct numbers from wc)
+: :  6  6 61
+: 
+: 
+: --------------------
+: test -f badfile (10 points for returning error value of 1, note extraneous &)
+: : exit value 1
+: 
+: 
+: --------------------
+: wc in badfile (10 points for returning text error)
+: cannot open badfile for input
+: 
+: 
+: --------------------
+: badfile (10 points for returning text error)
+: badfile: no such file or directory
+: 
+: 
+: --------------------
+: sleep 100 background (10 points for returning process ID of sleeper)
+: background pid is 11397
+: 
+: 
+: --------------------
+: pkill -signal SIGTERM sleep (10 points for pid of killed process, 10 points for signal)
+: (Ignore message about Operation Not Permitted)
+: the process sleep terminated
+: 
+: 
+: --------------------
+: sleep 1 background (10 pts for pid of bg ps when done, 10 for exit value)
+: background pid is 11410
+: : background pid 11410 is done: exit value 0
+
+: 
+: --------------------
+: pwd
+: /root/workspace/assignment3_smallsh/gaorui_program3
+: 
+: 
+: --------------------
+: cd
+: : 
+: 
+: --------------------
+: pwd (10 points for being in the HOME dir)
+: /root
+: 
+: 
+: --------------------
+: mkdir testdir11347
+: : 
+: 
+: --------------------
+: cd testdir11347
+: : 
+: 
+: --------------------
+: pwd (5 points for being in the newly created dir)
+: /root/testdir11347
+: --------------------
+: Testing foreground-only mode (20 points for entry & exit text AND ~5 seconds between times)
+: Entering foreground-only mode (& is now ignored)
+: Tue May  4 03:36:17 CST 2021
+: : Tue May  4 03:36:22 CST 2021
+: Exiting foreground-only mode
+: 
